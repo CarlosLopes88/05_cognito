@@ -72,7 +72,7 @@ output "cognito_domain" {
   value = "https://${aws_cognito_user_pool_domain.main.domain}.auth.${data.aws_region.current.name}.amazoncognito.com"
 }
 
-# Output para o ARN do User Pool
+# Output para o ARN do User Pool Cognito
 output "cognito_user_pool_arn" {
   value = aws_cognito_user_pool.order_system_pool.arn
 }
